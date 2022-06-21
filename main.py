@@ -31,8 +31,8 @@ def attackroll(bskill, nshots, strength, toughness):
     return woundnum
 
 
-# attackroll(bskill=int(input('What is your Weapon/Ballistic Skill? ')), nshots=int(input('How many shots? ')),
-#         strength=int(input('What is your strength? ')), toughness=int(input('What is the target toughness? ')))
+attackroll(bskill=int(input('What is your Weapon/Ballistic Skill? ')), nshots=int(input('How many shots? ')),
+         strength=int(input('What is your strength? ')), toughness=int(input('What is the target toughness? ')))
 
 
 def savingthrow(savenum, ap, save, fnp):
