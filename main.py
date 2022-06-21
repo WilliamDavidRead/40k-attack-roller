@@ -18,15 +18,9 @@ def attackroll(bskill, nshots, strength, toughness):
         woundsuccess = False
         mywound = random.randint(1, 6)
         wounds.append(mywound)
-        if strength <= toughness/2 and mywound > 5:
-            woundsuccess = True
-        elif (strength > toughness / 2) and mywound > 4:
-            woundsuccess = True
-        elif strength == toughness and mywound > 3:
-            woundsuccess = True
-        elif (strength > toughness) and (strength < toughness * 2) and mywound > 2:
-            woundsuccess = True
-        elif strength >= toughness*2 and mywound > 1:
+        if (strength <= toughness/2 and mywound > 5) or ((strength > toughness / 2) and mywound > 4)\
+                or (strength == toughness and mywound > 3) or\
+                ((strength > toughness) and (strength < toughness * 2) and mywound > 2):
             woundsuccess = True
         if woundsuccess:
             woundnum += 1
@@ -34,7 +28,47 @@ def attackroll(bskill, nshots, strength, toughness):
     print('Number of hits: ', hitnum)
     print('Wound rolls: ', wounds)
     print('Number of wounds: ', woundnum)
+    return woundnum
 
 
-attackroll(bskill=int(input('What is your Weapon/Ballistic Skill? ')), nshots=int(input('How many shots? ')),
-           strength=int(input('What is your strength? ')), toughness=int(input('What is the target toughness? ')))
+# attackroll(bskill=int(input('What is your Weapon/Ballistic Skill? ')), nshots=int(input('How many shots? ')),
+#         strength=int(input('What is your strength? ')), toughness=int(input('What is the target toughness? ')))
+
+
+def savingthrow(savenum, ap, save, fnp):
+    fnptest = False
+    if fnp == 'yes' or fnp == 'y' or fnp == 'Yes':
+        fnp = int(input('What is your feel no pain save? '))
+        fnptest = True
+    saves = []
+    fnprolls = []
+    failedsaves = 0
+    finalfails = 0
+    while savenum > 0:
+        savenum -= 1
+        savesuccess = False
+        mysave = random.randint(1, 6)
+        saves.append(mysave)
+        if (mysave - ap) >= save:
+            savesuccess = True
+        if not savesuccess:
+            finalfails += 1
+    if fnptest:
+        failedsaves = finalfails
+        for i in range(finalfails):
+            myfnp = random.randint(1, 6)
+            fnprolls.append(myfnp)
+            if myfnp >= fnp:
+                finalfails -= 1
+    if fnptest:
+        print('Saving throw rolls: ', saves)
+        print('Number of saves failed: ', failedsaves)
+        print('Feel no pain rolls: ', fnprolls)
+        print('Number of wounds taken: ', finalfails)
+    else:
+        print('Saving throw rolls: ', saves)
+        print('Number of wounds taken: ', finalfails)
+
+
+savingthrow(savenum=int(input('How many saving throws? ')), ap=int(input('What is the ap of the attacker? ')),
+            save=int(input('What is your saving throw? ')), fnp=input('Do you have feel no pain? '))
