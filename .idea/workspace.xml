@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4457f1aa-274c-438d-8e70-900aa98a5273" name="Changes" comment="Draft 1 of attack roller">
+    <list default="true" id="4457f1aa-274c-438d-8e70-900aa98a5273" name="Changes" comment="Removed some # on temporarily disabled function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -77,7 +77,8 @@
       <workItem from="1655755450285" duration="89000" />
       <workItem from="1655755611303" duration="51000" />
       <workItem from="1655755669997" duration="4095000" />
-      <workItem from="1655815432208" duration="4220000" />
+      <workItem from="1655815432208" duration="4400000" />
+      <workItem from="1656019300285" duration="1392000" />
     </task>
     <task id="LOCAL-00001" summary="Draft 1 of attack roller">
       <created>1655759034772</created>
@@ -86,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655759034772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added saving throw functionality">
+      <created>1655824327321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655824327321</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed some # on temporarily disabled function">
+      <created>1655824417245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655824417245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,10 +120,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Draft 1 of attack roller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Draft 1 of attack roller" />
+    <MESSAGE value="Added saving throw functionality" />
+    <MESSAGE value="Removed some # on temporarily disabled function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some # on temporarily disabled function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Warhammer_Attack_Roller$main.coverage" NAME="main Coverage Results" MODIFIED="1655824292179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Warhammer_Attack_Roller$main.coverage" NAME="main Coverage Results" MODIFIED="1656020624917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1655748625556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
